@@ -1,0 +1,7 @@
+SML is a procedural computer programming language with extremely strong support for higher-order functions and abstraction. It is often called a “functional” language, and it can be used that way, but SML is an imperative language with mutable storage and side effects.
+
+In syntax and semantics, SML stays fairly close to the ?-calculus. For example, just like in the ?-calculus, each function in SML has exactly 1 argument, so if you want to pass more than one thing you need to pack them all together into a data structure.
+
+SML is called a “strongly typed” language, because each type has a well defined meaning which is enforced by SML's typing rules. Because the meanings of types exclude the possibility of ill-defined behavior, it is said that “a well typed SML program can not go wrong”. Although an SML program can (correctly) exit due to an exception if one is raised and not caught, this behavior will be strictly according to the rules rather than being unpredictable.
+
+An SML implementation will automatically calculate most of the types used by a program, and typically very few types need to be written by a programmer.
