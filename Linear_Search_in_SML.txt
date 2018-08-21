@@ -1,0 +1,9 @@
+fun linsrch(ls : int list,search ,y)=
+	if null ls
+	then print("Not Found\n")
+	else
+	(
+		if search = hd ls
+		then print("found at index "^Int.toString(y)^"\n")
+		else linsrch( tl ls,search,y+1)
+	);
