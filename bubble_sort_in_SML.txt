@@ -1,0 +1,12 @@
+fun issorted [] = true |
+	issorted [a] = true |
+	issorted (a::b::t) = a <= b andalso issorted (b::t);
+fun bubble [] = [] |
+	bubble [a] = [a] |
+	bubble (a::b::t) = if (a>b)
+		then b::(bubble (a::t))
+		else a::(bubble (b::t));
+fun bubbleSort [] = [] |
+	bubbleSort l = if (issorted l)
+		then l
+		else bubbleSort (bubble l);
